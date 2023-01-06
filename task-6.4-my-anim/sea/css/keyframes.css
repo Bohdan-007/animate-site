@@ -1,0 +1,135 @@
+
+/* ANIMATION FOR ROPES */
+
+/* drop for rope 1 */
+@keyframes drop-1 {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: -5%;
+  }
+}
+
+/* drop for rope 2 */
+@keyframes drop-2 {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+/* drop for rope 3 */
+@keyframes drop-3 {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 8%;
+  }
+}
+
+
+
+/* ANIMATION FOR CLOUDS */
+
+/* clouds opacity*/
+@keyframes opacity-clouds {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* clouds swing */
+@keyframes cloud {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+
+
+/* ANIMATION FOR WAVES */
+
+/* waves swimming */
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+  }
+}
+
+/* waves opacity */
+@keyframes opacity-waves {
+  0% {
+   opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* ANIMATIO FOR KIGHTHOUSE */
+
+/* transition loghthouse form bottom to top */
+@keyframes show {
+  0% {
+    bottom: -100%;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* lighthouse swimming */
+@keyframes lighthouse {
+  0% {
+    transform: translate3d(15%, 0, 0) rotateZ(10deg);
+  }
+
+  100% {
+    transform: translate3d(-15%, 0, 0) rotateZ(-10deg);
+  }
+}
+
+
+/* FISH */
+
+@keyframes fish {
+  0% {
+    bottom: -50%;
+  }
+  
+  50% {
+    bottom: 15%;
+    left: 30%;    
+  }
+
+  100% {
+    bottom: -50%;
+    left: 10%;
+
+    transform: rotate(-90deg);
+  }
+}

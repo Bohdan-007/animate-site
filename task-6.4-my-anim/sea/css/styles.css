@@ -1,0 +1,224 @@
+body {
+  background: #000 url(../images/background.jpg) 0 0 / 100% 85% no-repeat;
+  overflow: hidden;
+}
+
+
+/* ROPE */
+
+.rope {
+  width: 100%;
+  height: 250px;
+  background: url(../images/rope.png) 50% / cover no-repeat;
+  position: absolute;
+}
+
+.rope-1 {
+  top: -5%;
+  z-index: 3;
+
+  animation: drop-1 1.5s;
+}
+
+.rope-2 {
+  top: 0;
+  z-index: 2;
+
+  animation: drop-2 1s;
+}
+
+.rope-3 {
+  top: 8%;
+
+  animation: drop-3 0.5s;
+}
+
+
+/* CLOUDS */
+
+.scale-2 {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  transform: scale(0.8);
+}
+
+.scale-3 {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 8%;
+  transform: scale(0.7);
+}
+
+.rope-element {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  
+  width: 280px;
+  height: 280px;
+  opacity: 0;
+
+  transform-origin: 50% 0;
+  animation: cloud 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity-clouds 2s 2s forwards;
+} 
+
+.direction-2 {
+  animation-duration: 3s;
+}
+
+.direction-3 {
+  animation-duration: 4s;
+}
+
+.rope-elmenent-1 {
+  background: url(../images/clouds/board-birds.png) 50% no-repeat;
+
+  top: 57%;
+  left: 15%;
+}
+
+.rope-elmenent-2 {
+  background: url(../images/clouds/board-cloud-2.png) 50% no-repeat;
+
+  top: 65%;
+  left: 55%;
+}
+
+.rope-elmenent-3 {
+  background: url(../images/clouds/board-cloud-1.png) 50% no-repeat;
+
+  top: 38%;
+  right: -2%;
+}
+
+.rope-elmenent-4 {
+  background: url(../images/clouds/board-cloud-1.png) 50% no-repeat;
+
+  top: 32%;
+  left: -15%;
+}
+
+.rope-elmenent-5 {
+background: url(../images/clouds/board-cloud-4.png) 50% no-repeat;
+
+top: 74%;
+left: 37%; 
+}
+
+.rope-elmenent-6 {
+  background: url(../images/clouds/board-cloud-2.png) 50% no-repeat;
+
+  top: 37%;
+  left: -9%;
+}
+
+.rope-elmenent-7 {
+  background: url(../images/clouds/board-cloud-3.png) 50% no-repeat;
+
+  top: 58%;
+  left: 16%;
+}
+
+.rope-elmenent-8 {
+  background: url(..//images/clouds/board-birds.png) 50% no-repeat;
+
+  top: 46%;
+  right: 0%;
+}
+
+/* WAVES */
+
+.wave {
+  position: absolute;
+  width: 300%;
+  left: -100%;
+
+  opacity: 0;
+}
+
+.wave-1 {
+  background: url(../images/waves/wave-paint.png) 0 0 / auto 100% repeat-x;
+  bottom: 15%;
+  height: 100px;
+
+  animation: wave 7.1s 0.1s infinite linear, opacity-waves 2s 1s forwards;
+}
+
+.wave-2 {
+  background: url(../images/waves/wave-plain.png) 0 0 / auto 100% repeat-x;
+  bottom: 10%;
+  height: 135px;
+
+  animation: wave 6.6s 0.1s infinite linear, opacity-waves 2s 1s forwards;
+}
+
+.wave-3 {
+  background: url(../images/waves/wave-plain.png) 0 0 / auto 100% repeat-x;
+  bottom: 5%;
+  height: 170px;
+
+  animation: wave 6.2s 0.1s infinite linear, opacity-waves 2s 1s forwards;
+}
+
+.wave-4 {
+  background: url(../images/waves/wave-paint.png) 0 0 / auto 100% repeat-x;
+  bottom: 0;
+  height: 205px;
+
+  animation: wave 5.7s 0.1s infinite linear, opacity-waves 2s 1s forwards;
+}
+
+.wave-5 {
+  background: url(../images/waves/wave-plain.png) 0 0 / auto 100% repeat-x;
+  bottom: -5%;
+  height: 240px;
+
+  animation: wave 4.8s 0.1s infinite linear, opacity-waves 2s 1s forwards;
+}
+
+.wave-6 {
+  background: url(../images/waves/wave-paint.png) 0 0 / auto 100% repeat-x;
+  bottom: -10%;
+  height: 280px;
+  animation: wave 4.5s 0.1s infinite linear, opacity-waves 2s 1s forwards;
+}
+
+
+/* LIGHTHOUSE */
+
+.lighthouse {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+  transform: scale(0.8);
+  opacity: 0;
+  animation: show 2s 2s cubic-bezier(0.68,-0.55,0.265,1.55) forwards;
+}
+
+.lighthouse-element {
+  background: url(../images/lighthouse.png) 0 0 no-repeat;
+  width: 320px;
+  height: 560px;
+  
+  animation: lighthouse 4s 0.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* FISH */
+
+.fish {
+  background: url(../images/fish.png) 50%  no-repeat;
+  width: 150px;
+  height: 150px;
+
+  display: block;
+  position: absolute;
+
+  bottom: -50%;
+  left: 50%;
+  transform: rotate(50deg);
+
+  animation: fish 5s 5s infinite ease-in-out;
+}
